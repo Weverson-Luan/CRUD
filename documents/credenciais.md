@@ -1,4 +1,4 @@
-Credencias do Mongo Atlas.
+Loal: Credencias do Mongo Atlas.
 
 Username: luandev
-Password:luandev97056799
+Password: luandev97056799
