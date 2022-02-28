@@ -8,7 +8,7 @@ import { UpdateAddressDto } from '../../core/dtos/updated-address.dto';
 import {
   Address,
   AddressDocument,
-} from '../../users/entities/domain/address/address.entity';
+} from '../../entities/domain/address/address.entity';
 
 @Injectable()
 export class AddressService {

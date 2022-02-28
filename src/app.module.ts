@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { UsersModule } from './users/users.module';
-import { AddressModule } from './useCases/address.module';
+import { UsersModule } from './useCases/users/users.module';
+import { AddressModule } from './useCases/address/address.module';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
