@@ -9,8 +9,8 @@ import { User, UserDocument } from './entities/user.entity';
 export class UsersService {
   constructor(@InjectModel(User.name) private UserModel: Model<UserDocument>) {}
   async create(createUserDto: CreateUserDto) {
-    const user = new this.UserModel(createUserDto);
-    return user.save();
+    const userModel = new this.UserModel(createUserDto);
+    return userModel.save();
   }
 
   findAll() {
@@ -19,6 +19,7 @@ export class UsersService {
 
   findOne(id: string) {
     const user = this.UserModel.findById(id); //retorna apenas um usuario especifico do banco
+
     return `This action returns a #${id} user ${user}`;
   }
 
