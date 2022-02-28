@@ -2,13 +2,13 @@
 import { Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { CreateAddressDto } from '../../core/dtos/create-address.dto';
-import { UpdateAddressDto } from '../../core/dtos/updated-address.dto';
+import { CreateAddressDto } from '../../core/dtos/address/create-address.dto';
+import { UpdateAddressDto } from '../../core/dtos/address/updated-address.dto';
 
 import {
   Address,
   AddressDocument,
-} from '../../entities/domain/address/address.entity';
+} from '../../domain/entities/address/address.entity';
 
 @Injectable()
 export class AddressService {

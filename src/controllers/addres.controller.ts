@@ -9,8 +9,8 @@ import {
   Delete,
 } from '@nestjs/common';
 import { AddressService } from '../useCases/address/address.service';
-import { CreateAddressDto } from '../core/dtos/create-address.dto';
-import { UpdateAddressDto } from '../core/dtos/updated-address.dto';
+import { CreateAddressDto } from '../core/dtos/address/create-address.dto';
+import { UpdateAddressDto } from '../core/dtos/address/updated-address.dto';
 
 @Controller('address')
 export class addressController {

@@ -6,7 +6,7 @@ import { addressController } from '../../controllers/addres.controller';
 import {
   Address,
   AddressSchema,
-} from '../../entities/domain/address/address.entity';
+} from '../../domain/entities/address/address.entity';
 
 @Module({
   imports: [
