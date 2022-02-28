@@ -3,6 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { CreateAddressDto } from '../../core/dtos/create-address.dto';
+import { UpdateAddressDto } from '../../core/dtos/updated-address.dto';
 
 import {
   Address,
@@ -21,6 +22,20 @@ export class AddressService {
 
   findAll() {
     return this.AddressModel.find(); //retorna todos do banco
+  }
+
+  update(id: string, updateAddressDto: UpdateAddressDto) {
+    return this.AddressModel.findByIdAndUpdate(
+      {
+        _id: id, //buscar pelo ai que vou ta enviado
+      },
+      {
+        $set: updateAddressDto, // atualizar esses dados
+      },
+      {
+        new: true, // pega minhas informação e alterar se não passar o new ele não salvarr suas informções
+      },
+    );
   }
 
   remove(id: string) {

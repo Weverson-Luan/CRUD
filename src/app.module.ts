@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { UsersModule } from './users/users.module';
 import { AddressModule } from './useCases/address.module';
 import { MongooseModule } from '@nestjs/mongoose';
-import { addressController } from './controllers/addres.controllers';
 
 @Module({
   imports: [
