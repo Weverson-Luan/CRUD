@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-export class CreateUserDto {
+export class CreateAddressDto {
   uf: string;
   city: string;
   zip_code: string;
