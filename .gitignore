@@ -2,6 +2,9 @@
 /dist
 /node_modules
 
+# Documents
+/documents
+
 # Logs
 logs
 *.log
@@ -17,6 +20,7 @@ lerna-debug.log*
 # Tests
 /coverage
 /.nyc_output
+
 
 # IDEs and editors
 /.idea
