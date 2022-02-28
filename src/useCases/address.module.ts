@@ -15,4 +15,4 @@ import {
   controllers: [addressController],
   providers: [AddressService],
 })
-export class UsersModule {}
+export class AddressModule {}
