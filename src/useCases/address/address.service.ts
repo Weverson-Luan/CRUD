@@ -21,7 +21,7 @@ export class AddressService {
   }
 
   findAll() {
-    return this.AddressModel.find(); //retorna todos do banco
+    return this.AddressModel.find(); //retorna todos endereços do banco
   }
 
   update(id: string, updateAddressDto: UpdateAddressDto) {
