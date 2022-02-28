@@ -10,6 +10,7 @@ import {
 } from '@nestjs/common';
 import { AddressService } from '../useCases/address/address.service';
 import { CreateAddressDto } from '../core/dtos/create-address.dto';
+import { UpdateAddressDto } from '../core/dtos/updated-address.dto';
 
 @Controller('address')
 export class addressController {
@@ -23,6 +24,11 @@ export class addressController {
   @Get()
   findAll() {
     return this.addressService.findAll();
+  }
+
+  @Patch(':id')
+  update(@Param('id') id: string, @Body() updateAddressDto: UpdateAddressDto) {
+    return this.addressService.update(id, updateAddressDto);
   }
 
   @Delete(':id')
