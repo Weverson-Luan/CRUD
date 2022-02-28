@@ -10,7 +10,7 @@ import {
 } from '../../users/entities/domain/address/address.entity';
 
 @Injectable()
-export class AddresssService {
+export class AddressService {
   constructor(
     @InjectModel(Address.name) private AddressModel: Model<AddressDocument>,
   ) {}
